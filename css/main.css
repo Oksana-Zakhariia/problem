@@ -34,7 +34,7 @@ img {
   margin: 0 auto;
 }
 
-.portfolio__filter-button, .modal__submit-button, .site-hero__button {
+.portfolio__filter-button, .form__button, .modal__submit-button, .site-hero__button {
   cursor: pointer;
   border-radius: 4px;
   text-align: center;
@@ -864,6 +864,64 @@ img {
 
 .footer__third-part {
   margin-left: auto;
+}
+
+.form__slogan {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  line-height: 1.17;
+  margin-bottom: 20px;
+}
+
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__placeholder {
+  display: block;
+  text-align: left;
+  padding: 0;
+  padding-left: 16px;
+  margin-right: 12px;
+  width: 358px;
+  height: 50px;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  outline: none;
+  font-size: 16px;
+}
+
+.form__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  background-color: #2196F3;
+  color: #FFFFFF;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+.form__icon {
+  fill: #FFFFFF;
+  margin-left: 10px;
 }
 
 .portfolio__button-list {
