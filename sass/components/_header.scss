@@ -1,0 +1,52 @@
+.site-header {
+    border-bottom: solid 1px $light-grey-color;
+}
+
+.site-header__container {
+    @extend%container;
+    display: flex;
+    align-items: center;
+}
+.site-header__mail-svg {
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.site-header__phone-svg {
+    width: 10px;
+    height: 16px;
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.site-header__contacts {
+    @extend%reset-list;
+    display: flex;
+    margin-left: auto;
+    color: $primary-text;
+    }
+
+.site-header__contact {
+    display: inline-flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+    color: $primary-text;
+    text-decoration-line: none;
+    list-style: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms $timing-function;
+    &:hover,
+    &:focus{
+        color: $accent-color;
+    }
+}
+
+.site-header__item:not(:last-child) {
+    margin-right: 50px;
+}
+

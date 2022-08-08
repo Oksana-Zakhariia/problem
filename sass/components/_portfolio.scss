@@ -1,0 +1,41 @@
+.portfolio{
+@extend%section;
+}
+.portfolio__container{
+ @extend%container;
+}
+
+.portfolio__button-list{
+ @extend%reset-list;
+margin-bottom: 50px;
+display: flex;
+justify-content: center;
+}
+.portfolio__button:not(:last-child) {
+    margin-right: 8px;
+}
+.portfolio__filter-button{
+@extend%button;
+background-color: $grey-bacground-color;
+color: $black-color;
+font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.63;
+letter-spacing: 0.03em;
+cursor: pointer;
+padding: 6px 22px;
+border: none;
+transition: background-color 250ms $timing-function,
+color 250ms $timing-function, box-shadow 250ms $timing-function;
+    &:not(:last-child){
+        margin-right: 22px;
+    }
+    &:hover,
+    &:focus{color: $white-color;
+        background-color: $accent-color;
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+            0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+
+    }
+}
