@@ -58,14 +58,14 @@ overflow: hidden;
     opacity: 1;
 }
 .project__card-description{
+    display:block;
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 20px;
     padding-bottom: 20px;
     border: solid 1px $main-border-color;
     border-top: none;
-
-}
+   }
 .project__title{
     color: $title-text-color;
     font-size: 18px;
