@@ -1,18 +1,25 @@
 .site-nav {
-    margin-left: 93px;
-}
-
+    margin-left: 88px;
+    @media screen and (min-width:1200px) {
+        margin-left: 93px;
+        }
+    }
+   
 .site-nav__list {
     @extend%reset-list;
     display: flex;
-    color:$title-text-color;
+    color: $title-text-color;
     font-weight: 500;
     line-height: 1.14;
-    letter-spacing: 0.02em;   
+    letter-spacing: 0.02em;
 }
 
+@media (max-width: 767px) {
+    .site-nav__list{display: none;}
+}
 .site-nav__item:not(:last-child) {
     margin-right: 50px;
+
 }
 
 .site-nav__link {
@@ -32,12 +39,14 @@
 }
 
 .site-nav__link--current {
-    display: block;
+display: block;
     position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
     color: #2196F3;
-    &::after{content: "";
+
+    &::after {
+        content: "";
         position: absolute;
         bottom: 0;
         left: 0;
@@ -46,6 +55,6 @@
         height: 4px;
         border-radius: 2px;
         background-color: $accent-color;
-
-    }
+}
+    
 }

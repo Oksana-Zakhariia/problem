@@ -4,33 +4,60 @@
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
             url("../images/hero-bacground-img.jpg");
-    height : 600px;
-    max-width: 1600px;
+    
     margin-left: auto;
     margin-right: auto;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;  
+    height: 400px;
+    max-width: 1600px;
+    @media screen and (min-width:1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        height: 600px;
+        }
 }
 
 .site-hero__container {
     @extend%container;
+    margin-right: auto;
+    margin-left: auto;
+    @media screen and (min-width:480px) {
+            width: 480px;
+        }
+    
+        @media screen and (min-width:768px) {
+            width: 768px;
+        }
+    
+        @media screen and (min-width:1200px) {
+            width: 1200px;
+        }
     
 }
 
 .site-hero__title {
+    margin-right: auto;
+    margin-left: auto;
     color: $white-color;
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 1.36;
+    font-size: 26px;
     letter-spacing: 0.06em;
+    line-height: 1.62;
     text-align: center;
     text-transform: uppercase;
-    width: 696px;
-    margin: 0 auto;
+    font-weight: 900;
+    @media screen and (min-width:768px){
+        width: 360px;
+    }
+    @media screen and (min-width:1200px) {
+            font-size: 44px;
+            line-height: 1.36;
+            width: 696px;
+        }
 }
 
 .site-hero__button {

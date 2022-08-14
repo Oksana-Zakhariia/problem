@@ -1,32 +1,83 @@
 .client {
     @extend%section;
+    padding-top:  60px;
+    padding-bottom: 60px;
+    @media screen and (min-width:1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .client__container {
     @extend%container;
+    @media screen and (min-width:480px) {
+            width: 480px;
+        }
+    
+        @media screen and (min-width:768px) {
+            width: 768px;
+    
+        }
+    
+        @media screen and (min-width:1200px) {
+            width: 1200px;
+    
+        }
 }
 
 .client__title {
-    margin: 0;
     color: $title-text-color;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.16;
     text-align: center;
-    margin-bottom: 50px;
+    margin: 0;
+    margin-bottom: 30px;
+    
+    @media screen and (min-width:1200px) {
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
 }
 
 .clients__list {
 @extend%reset-list; 
 display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+@media screen and (min-width:1200px) {
+        flex-wrap: nowrap;
+    }
+}
+.client__item{
+    height: 92px;
+    margin-bottom: 30px;
+    gap: 30px;
+    flex-basis: calc((100% - 30px)/2);
+
+    &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+    }
+ @media screen and (min-width:768px) {
+     gap: 30px;
+     margin-bottom: 30px;
+     flex-basis: calc((100% - 60px)/3);
+
+     &:nth-last-child(-n + 3) {
+         margin-bottom: 0;
+     }
+ }
+  @media screen and (min-width:1200px){
+    width: 170px;
+    
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+  }
 }
 
-.client__item:not(:last-child) {
-    margin-right: 30px;
-}
 
 .client__thumb {
-    width: 170px;
-    height: 92px;
+    
     border: 1px solid var(--icons-color);
     border-radius: 4px;
     display: inline-block;
@@ -34,12 +85,10 @@ display: flex;
 }
 
 .client__icon {
-    width: 106px;
     fill: currentColor;
 }
 
 .client__link {
-    min-width: 170px;
     height: 92px;
     border: 1px solid $icons-color;
     border-radius: 4px;

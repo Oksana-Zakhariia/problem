@@ -1,9 +1,12 @@
 .social-link__list {
     display: flex;
-    justify-content: space-between;
     margin: 0;
     padding: 0;
     list-style: none;
+    justify-content: center;
+}
+.social-link__item:not(:last-child){
+    margin-right: 10px;
 }
 
 .social-link__link {
@@ -17,6 +20,7 @@
     border-radius: 50%;
     transition: background-color 250ms $timing-function,
     color 250ms $timing-function;
+  
     &--dark {
             background-color: $footer-social-link-bg-color ;
         }    

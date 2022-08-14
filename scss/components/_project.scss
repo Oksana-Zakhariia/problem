@@ -1,14 +1,22 @@
 .project__list{
  @extend%reset-list;
+margin: -15px;
+
+@media screen and (min-width:768px) {
 display: flex;
 flex-wrap: wrap;
-margin-right: -30px;
-margin-bottom: -30px;
+
+}
 }
 .project{
-margin-right: 30px;
-margin-bottom: 30px;
-flex-basis: calc(1200px / 3 - 30px);
+margin: 15px;
+width: 100%;
+@media screen and (min-width:768px){
+    flex-basis: calc((100% - 60px)/2);
+}
+@media screen and (min-width:1200px){
+flex-basis: calc((100% - 90px)/ 3);
+}
 }
 .project__link{
 text-decoration: none;
