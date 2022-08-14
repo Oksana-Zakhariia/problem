@@ -1,17 +1,18 @@
 .project__list{
  @extend%reset-list;
-margin: -15px;
+
 
 @media screen and (min-width:768px) {
 display: flex;
 flex-wrap: wrap;
-
+margin: -15px;
 }
 }
 .project{
-margin: 15px;
+margin-bottom: 30px;
 width: 100%;
 @media screen and (min-width:768px){
+    margin: 15px; ;
     flex-basis: calc((100% - 60px)/2);
 }
 @media screen and (min-width:1200px){
